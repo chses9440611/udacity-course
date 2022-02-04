@@ -35,8 +35,10 @@ class UnitConverterApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.green[100],
         body: const Center(
-          // TODO: Determine what properties you'll need to pass into the widget
-          child: Category(),
+          child: Category(
+		  	name: _categoryName,
+			iconLocation: _categoryIcon,
+			color: _categoryColor),
         ),
       ),
     );
